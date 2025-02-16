@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاجی اسلم پراچہ اینڈ سنز کمیشن شاپ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,
+200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,
+200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <center>
+            <h1>
+                حاجی اسلم پراچہ اینڈ سنز کمیشن شاپ
+            </h1>
+        </center>
+        </div>
+    </header>
+    <section class="container">
+    <form action="">
+        <div>
+        <input type="text" name="name"  placeholder="گاہک کا نام" required onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 32">
+        <label for="name"> :گاہک کا نام</label>
+    </div>
+        <div>
+    <select id="itemSelect" required " style="margin-right: 7px;">
+    <option value="">-- Select --</option>
+    <option value="wheat">گندم</option>
+    <option value="rice">دھان</option>
+    <option value="cotton">نرما</option>
+    <option value="mustard">سرسوں</option>
+    <option value="til">تل</option>
+    <option value="gud">گڑ</option>
+    <option value="maaki">مکئ</option>
+    <option value="bajra">باجرا</option>
+    <option value="kosso">تارا میرا(کسو)</option>
+    <option value="jo">جو</option>
+    <option value="jawar">جوار</option>
+    <option value="chany">چنے</option>
+    <option value="iron">لوہا</option>
+    <option value="tukrhy">ٹکڑے</option>
+</select>
+    <label for="">  :جنس کا نام</label>
+
+</div>
+
+<div>
+    <input type="number" name="rate" placeholder="ریٹ" required style="margin-right: 60px;" id="rate" >
+    <label for="rate"> :ریٹ</label>
+</div>
+
+<div>
+    <input type="number" name="weight" placeholder="وزن " required style="margin-right: 9px;" id="weight" oninput="calculateAmount()">
+    <label for="weight"> (kg):وزن</label>
+</div>
+
+<div>
+    <input type="number" name="expense" placeholder="خرچہ " required style="margin-right: 8px;" id="expense" >
+    <label for="expense"> :(%)خرچہ</label>
+</div>
+<div>
+    <input type="number" name="labour" placeholder="مزدوری " required style="margin-right: 28px;" id="labour" >
+    <label for="labour"> :مزدوری</label>
+</div>
+<div>
+    <input type="number" name="pay" placeholder="نقد رقم" required style="margin-right: 42px;" id="pay" >
+    <label for="labour"> :نقد رقم</label>
+</div>
+</div>
+<div class="total-amount">
+    <p id="amount"></p>
+    <p id="expenseAmount"></p>
+    <p id="labouramount"></p>
+    <p id="totalamount"></p>
+    <p id="paying"></p>
+    <p id="remainingAmount"></p>
+</div>
+<div class="div-btn">
+<button class="btn" type="button" onclick="calculateAmount()">Calculate</button>
+<button type="submit" class="btn" onclick="validateForm()">Print</button>
+</div>
+    </form>
+</section>
+<script src="index.js"></script>
+</body>
+</html>
