@@ -24,11 +24,12 @@
     <section class="container">
     <form action="">
         <div>
+        <label for="name"> گاہک کا نام</label>
         <input type="text" name="name"  placeholder="گاہک کا نام" required onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 32">
-        <label for="name"> :گاہک کا نام</label>
     </div>
         <div>
-    <select id="itemSelect" required " style="margin-right: 7px;">
+    <label for="">  جنس کا نام</label>
+    <select id="itemSelect" required " >
     <option value="">-- Select --</option>
     <option value="wheat">گندم</option>
     <option value="rice">دھان</option>
@@ -45,31 +46,30 @@
     <option value="iron">لوہا</option>
     <option value="tukrhy">ٹکڑے</option>
 </select>
-    <label for="">  :جنس کا نام</label>
 
 </div>
 
 <div>
-    <input type="number" name="rate" placeholder="ریٹ" required style="margin-right: 60px;" id="rate" >
-    <label for="rate"> :ریٹ</label>
+    <label for="rate"> ریٹ</label>
+    <input type="number" name="rate" placeholder="ریٹ" required " id="rate" >
 </div>
 
 <div>
-    <input type="number" name="weight" placeholder="وزن " required style="margin-right: 9px;" id="weight" oninput="calculateAmount()">
-    <label for="weight"> (kg):وزن</label>
+    <label for="weight">  وزن (kg)</label>
+    <input type="number" name="weight" placeholder="وزن " required  id="weight" oninput="calculateAmount()">
 </div>
 
 <div>
-    <input type="number" name="expense" placeholder="خرچہ " required style="margin-right: 8px;" id="expense" >
-    <label for="expense"> :(%)خرچہ</label>
+    <label for="expense">  خرچہ (%) </label>
+    <input type="number" name="expense" placeholder="خرچہ " required  id="expense" >
 </div>
 <div>
-    <input type="number" name="labour" placeholder="مزدوری " required style="margin-right: 28px;" id="labour" >
-    <label for="labour"> :مزدوری</label>
+    <label for="labour">  مزدوری</label>
+    <input type="number" name="labour" placeholder="مزدوری " required   id="labour" >
 </div>
 <div>
-    <input type="number" name="pay" placeholder="نقد رقم" required style="margin-right: 42px;" id="pay" >
-    <label for="labour"> :نقد رقم</label>
+    <label for="labour">  نقد رقم</label>
+    <input type="number" name="pay" placeholder="نقد رقم" required   id="pay" >
 </div>
 </div>
 <div class="total-amount">
